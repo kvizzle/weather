@@ -1,0 +1,108 @@
+body,
+html {}
+
+.container-fluid {
+   background-image: url("http://res.cloudinary.com/d5hbzroitr/image/upload/v1485893236/10d_rain_day_m9xn4m.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+}
+
+.inner {
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  width: 70%;
+  background-color: rgba(255, 255, 255, .4);
+  border-radius: 5%;
+  padding: 0px 0px 0px 0px !important;
+}
+
+.weatherdata {
+  text-align: center;
+  padding: 30px;
+  font-family: 'Sansita', sans-serif;
+}
+
+.city {
+  font-size: 35px;
+}
+
+.description {
+  font-size: 30px;
+}
+
+.temp {
+  font-size: 20px;
+}
+
+.switch {
+  position: relative;
+  width: 60px;
+  height: 20px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+  display: none;
+}
+
+
+/* The slider */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  text-align: center;
+  content: "C";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(39px);
+  -ms-transform: translateX(39px);
+  transform: translateX(39px);
+  text-align: center;
+  content: "F";
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
